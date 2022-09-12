@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+--red:hsl(10, 79%, 65%);
+--cyan:hsl(186, 34%, 60%);
+--cream: hsl(27, 66%, 92);
+--orange:hsl(30, 100%, 49%);
+--mediumbrown: hsl(28, 10%, 53%);
+--softred: hsl(10, 79%, 65%);
+--darkbrown: hsl(25, 47%, 15%);
+}
+.root-container {
+  display:flex;
+justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+ 
+}
+.container {
+  background-color: white;
+ width: 500px;
+ height: 550px;
+
+}
+.balance {
+  background-color: var(--red);
+  height: 20%;
+
+  border-radius: 10px;
+}
+.days {
+  display: flex;
+  justify-content: space-evenly;
+  height:275px;
+  align-items: flex-end;
+}
+.bar {
+  background-color: var(--red);
+  min-height: 10px;
+  content: ' ';
+  width: 40px;
+  right: 4px;
+  position: relative;
+  border-radius: 10px;
+}
+.bar:hover {
+  background-color: var(--cyan);
+}
+.footer {
+  background-color: white;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#percentage {
+  text-align: right;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#total-month {
+  font-size: 40px;
+}
+#bar1 {
+  height: 4.377730855267284vh;
+}
+#bar2{
+  height: 8.757970438818388vh;
+}
+#bar3{
+  height: 13.12vh;
+}
+#bar4 { 
+  height: 7.794618777831205vh
+}
+#bar5 { 
+  height: 5.867915455856836vh
+}
+#bar6{
+  height: 10.857776012376393vh;
+}
+#bar7 { height: 6.392239667175382vh}
+#mybalance {
+  padding: 25px;
+  font-size: 110%;
+  color: white;
+}
+#moneybalance {
+  font-size: 200%;
+  position: relative;
+  left: 22px;
+  bottom: 25px;
+  color: white;
+}
+#spending{
+  position: relative;
+ left: 25px;
+ top: 60px;
+ font-size: 30px;
+}
+.popup {
+  background-color: var(--darkbrown);
+  padding: 6px;
+  border-radius: 8px;
+  margin: 0;
+transform: translateX(-0.15in) translateY(-0.4in);
+position: absolute;
+visibility: hidden;
+color: white;
+font-weight: 700;
+
+}
+.popup-active {
+  background-color: var(--darkbrown);
+  padding: 6px;
+  border-radius: 8px;
+  margin: 0;
+transform: translateX(-0.15in) translateY(-0.4in);
+position: absolute;
+
+  color:white;
+  font-weight: 700;
+}
+.test {
+  display: none;
+}
+
+.react-logo {
+  position: absolute;
+  transform: translateY(32px) translateX(400px);
+}
